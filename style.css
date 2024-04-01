@@ -1,0 +1,516 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 80px; */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: #ccc;
+    height: 50px;
+    margin-top:40px;
+    position: sticky;
+    top: 0;
+}
+
+nav .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li{
+    display: inline-block; 
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    color: #000;
+    padding: 17px 35px;
+}
+
+nav ul li a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+}
+ /* Dropdawn-01 start */
+nav .parentone{
+    position: relative;
+}
+
+nav .dropdawn-one{
+    position: absolute;
+    background-color: #ccc;
+    width: 250px;
+    margin-top: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav .parentone:hover .dropdawn-one{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+nav .dropdawn-one li{
+    width: 100%;
+}
+
+nav .dropdawn-one li a{
+    width: 100%;
+    display: inline-block;
+    transition: 0.3s;
+
+}
+
+
+nav .sub-parent{
+    position: relative;
+}
+
+nav .sub-dropdawn{
+    position: absolute;
+    width: 250px;
+    background-color: #ccc;
+    left: 250px;
+    top: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity:0;
+}
+
+nav .sub-parent:hover .sub-dropdawn{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* child dropdawn start */
+nav .child-two{
+    position: relative;
+}
+nav .child-dropdawn{
+    position: absolute;
+    width: 250px;
+    background-color: #ccc;
+    top: 0;
+    left: 250px;
+    visibility: hidden;
+    opacity: 0;
+}
+nav .child-two:hover .child-dropdawn{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+nav .child-dropdawn li{
+    width: 100%;
+}
+nav .child-dropdawn li a{
+    width: 100%;
+    display: inline-block;
+    transition: 0.3s;
+}
+/* child-dropdawn end */
+
+/* Dropdawn-01 end */
+
+
+
+/* Dropdawn-02 start */
+
+nav.parenttwo{
+    position: relative;
+}
+nav .dropdawn-two{
+    position: absolute;
+    width: 250px;
+    top:50px;
+    background-color:#ccc;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav .parenttwo:hover .dropdawn-two{
+     visibility: visible;
+     opacity: 1;
+     transition: 0.3s;
+}
+
+nav .dropdawn-two li{
+    width: 100%;
+}
+
+nav .dropdawn-two li a{
+    width: 100%;
+    display: inline-block;
+}
+
+/* sub-dropdawntwo start */
+
+nav .sub-parenttwo{
+    position: relative;
+}
+nav .sub-dropdawntwo{
+    position: absolute;
+    width: 250px;
+    top: 0;
+    left: 250px;
+    background-color: #ccc;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav .sub-parenttwo:hover .sub-dropdawntwo{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+nav .sub-dropdawntwo li{
+    width: 100%;
+
+}
+nav .sub-dropdawntwo li a{
+    width: 100%;
+    display: inline-block;
+}
+/* sub-dropdawntwo end */
+
+
+/* Dropdawn-02 end */
+
+.banner{
+    margin-top: 45px;
+    width: 100%;
+    height: 450px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.picture{}
+
+.picture img{
+height: 300px;
+width: 500px;
+margin-left: 10px;
+margin-right: 90px;
+box-shadow: 5px 7px 20px black;
+
+}
+.content{
+    height: 300px;
+    width: 500px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    padding: 25px;
+    box-shadow: 3px 3px 14px white    
+}
+.content h3{
+    margin-top: 60px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+
+}
+.content p{
+    text-align: justify;
+    margin-top: 10px;
+}
+.video{
+    width: 100%;
+    height: 400px;
+    background-color:#3B3B98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.card1 img{
+    width: 400px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px;
+    margin-right: 5px;
+
+}
+
+
+.flowerproduct{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    margin-top: 35px;
+    background-color:;
+}
+
+.card-one{
+    width: 300px;
+    background-color:#D980FA;
+    padding: 10px;
+    box-shadow: 5px 6px 13px;
+
+
+}
+.card-one img{
+    width: 100%;
+    padding: 0;
+}
+.card-one p{
+    text-align: center;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.card-one .crdon-price{
+    display: inline-block;
+    background-color: #6F1E51;
+    color: #fff;
+    padding: 10px 20px; 
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;  
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+}
+button:hover{
+    background-color: #5758BB;
+    color: #fff;
+    transition: 0.4s;
+}
+button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.birdproduct{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 35px;
+}
+.card-two{
+    width: 300px;
+    background-color:#D980FA;
+    padding: 10px;
+    box-shadow: 5px 6px 13px;
+
+}
+.card-two img{
+    width: 100%;
+    padding: 0;
+}
+.card-two p{
+    margin-bottom: 12px;
+}
+.card-two .crdto-price{
+    display: inline-block;
+    background-color: #6F1E51;
+    color: #fff;
+    padding: 10px 20px; 
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+
+#test{
+    width: 100%;
+    height: 400px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bkvideo.jpg);
+    background-position: cover;
+}
+#test span{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    background-color:#ec0404;
+    padding: 14px;
+    border-radius: 50%;
+    font-size: 40px;
+    z-index: 2;
+}
+
+#test span:hover{
+    background-color: #f39c12;
+    color:  #ec0404;
+    transition: 0.3s;
+}
+
+#test .container span::before{
+    content:"";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color:#ec0404;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-top: -6px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    z-index: -2;
+
+    /* First way */
+
+    /* animation-name: click-video;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+
+    /* Second way */
+
+    animation: click-video 2s infinite linear;
+}
+
+#test .container span::before:hover{
+    background-color: orange;
+    transition: 0.4s;
+}
+
+@keyframes click-video{
+    0%{
+      opacity: 0;
+      transform:scale(1);
+    }
+    30%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 0;
+      transform: scale(2.4);
+    }
+}
+
+.footer{
+    position:relative;
+    width: 100%;
+    height: 300px;
+    background-color: ;
+    margin-top: 45px;
+    margin-bottom: 30px;
+
+}
+
+.btn-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.ant{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+.ant::before,.ant::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #f80707;
+    transition: 0.2s;
+}
+
+.ant::before{
+    top: 0;
+    right: 0;
+    width:0;
+    height: 6px;
+}
+
+.ant:hover::before{
+    width: 110%;
+    transition-delay: 0.s;
+}
+
+.ant::after{
+    bottom: 0;
+    left: 0;
+    width:0;
+    height: 6px;
+}
+.ant:hover::after{
+    width: 110%;
+    transition-delay: 0.s;
+}
+
+span{
+    display: block;
+    background-color: #000;
+    padding: 25px 55px;
+    transition-delay: 0;
+}
+span:hover{
+
+}
+
+span::before,span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #f80707;
+    transition: 0.2s;
+    
+}
+
+span::before{
+    bottom: 0;
+    left: 0;
+    width:6px;
+    height:0;
+}
+
+.ant:hover span::before{
+     height: 120%;
+     transition-delay: 0.s;
+}
+
+span::after{
+    top: 0;
+    right: 0;
+    width:6px;
+    height:0;
+}
+.ant:hover span::after{
+    height: 120%;
+    transition-delay: 0.s;
+}
+
+
+
+
+
+
